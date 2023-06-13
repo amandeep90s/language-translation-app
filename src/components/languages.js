@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const Languages = ({ language, onLanguageChange }) => {
   return (
     <div>
-      <label htmlFor='select'>Select Language</label>
+      <label>Select Language</label>
       <div className='opts'>
         {LANGUAGES.map(({ label, value }) => {
           return (
@@ -35,5 +36,10 @@ const LANGUAGES = [
   { label: 'Swahili', value: 'sw' },
   { label: 'Thai', value: 'th' },
 ];
+
+Languages.propTypes = {
+  language: PropTypes.string.isRequired,
+  onLanguageChange: PropTypes.func.isRequired,
+};
 
 export default Languages;
