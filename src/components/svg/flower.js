@@ -75,7 +75,7 @@ const Flower = ({ fill, className }) => {
 
 Flower.propTypes = {
   className: PropTypes.string,
-  fill: PropTypes.object,
+  fill: PropTypes.string,
 };
 
 export default Flower;
