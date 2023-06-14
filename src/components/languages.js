@@ -11,7 +11,7 @@ const Languages = ({ language, onLanguageChange }) => {
             <div
               key={label}
               className={`opt ${language === value ? 'selected' : ''}`}
-              onChange={() => onLanguageChange(value)}
+              onClick={() => onLanguageChange(value)}
               value={value}
             >
               {label}
@@ -30,6 +30,7 @@ const LANGUAGES = [
   { label: 'Hindi', value: 'hi' },
   { label: 'Japanese', value: 'ja' },
   { label: 'Portuguese', value: 'pt' },
+  { label: 'Punjabi', value: 'pa' },
   { label: 'Russian', value: 'ru' },
   { label: 'Simplified Chinese', value: 'zh-CN' },
   { label: 'Spanish', value: 'es' },

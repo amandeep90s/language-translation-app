@@ -4,7 +4,7 @@ import Languages from './components/languages';
 import Translate from './components/translate';
 
 const App = () => {
-  const [language, setLanguage] = useState('es');
+  const [language, setLanguage] = useState('pa');
   const [text, setText] = useState('');
 
   return (
